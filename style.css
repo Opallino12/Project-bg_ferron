@@ -1,0 +1,23 @@
+.upper{
+    margin: 10px;
+}
+#nama{
+    margin-left: 58px;
+    margin-bottom: 10px;
+}
+#suku{
+    margin-left: 65px;
+    margin-bottom: 10px;
+}
+#tmpt{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+#tgl{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.lower{
+    margin-left: 60px;
+    margin-right: 60px;
+}
