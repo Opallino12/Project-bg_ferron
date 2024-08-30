@@ -20,8 +20,11 @@ let formValidation = () => {
         console.log("successs");
         msg.innerHTML = "";
         acceptData();
-
+        backToIndex();
     }
+};
+function backToIndex() {
+    window.location.pathname = "index.html";
 };
 
 let data = [];
@@ -37,6 +40,7 @@ let acceptData = () => {
     
     console.log(data);
     createPost();
+
 };
 
 let createPost = () =>{
@@ -47,8 +51,8 @@ let createPost = () =>{
                 <td>${x.sukus}</td>
                 <td>${x.tmpts}</td>
                 <td>${x.tgls}</td>
-                <td><button onclick="editPost(this)">Edit</button></td>
-                <td><button onclick="deletePost(this)">Hapus</button></td>
+                <td><button class="btn btn-dark" onclick="editPost(this)">Edit</button></td>
+                <td><button class="btn btn-dark" onclick="deletePost(this)">Hapus</button></td>
             </tr>`);
     });
     
