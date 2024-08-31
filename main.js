@@ -20,12 +20,9 @@ let formValidation = () => {
         console.log("successs");
         msg.innerHTML = "";
         acceptData();
-        backToIndex();
     }
 };
-function backToIndex() {
-    window.location.pathname = "index.html";
-};
+
 
 let data = [];
 
@@ -44,9 +41,9 @@ let acceptData = () => {
 };
 
 let createPost = () =>{
-    data.map((x) => {
+    data.map((x, y) => {
         return (posts.innerHTML +=`
-            <tr>
+            <tr id=${y}>
                 <td>${x.namas}</td>
                 <td>${x.sukus}</td>
                 <td>${x.tmpts}</td>
@@ -67,6 +64,8 @@ let resetForm = () => {
 };
 
 let deletePost = (e) => {
+    
+    alert("Data Berhasil Di hapus")
     e.parentElement.parentElement.remove();
 
     data.splice(e.parentElement.parentElement.id, 1);
